@@ -1,21 +1,42 @@
-import React from 'react'
-import landscape from './assets/landscape.png'
+import React, { useEffect, useState } from 'react'
+import country from './assets/country.webp'
+
 
 const Solutions = () => {
-  return (
-    <>
-        <div className="grid grid-cols-2">
-            <div>
-                <img src={landscape} alt="" />
+    const titles = [
+        "Sustain Agriculture",
+        "support the farmers",
+        "tackle demand"
+    ]
+    const [title, setTitle] = useState(titles[0]);
+    
+
+    useEffect(() => {
+        let index = 0;
+        const interval = setInterval(() => {
+            setTitle(titles[index]);
+            index = (index + 1) % titles.length;
+        }, 4000);
+        return () => clearInterval(interval);
+    }, []);
+
+    const bgColors = ['bg-light-green', 'bg-peach-green', 'bg-lemon-green']; // Define the background colors
+    
+
+    return (
+        <>
+            <div className="grid sm:grid-cols-2">
+                <div>
+                    <img src={country} alt="" />
+                </div>
+                <div className={`flex justify-center items-center  ${bgColors[titles.indexOf(title)]} h-96 sm:h-auto soln`}>
+                    <h1 className='uppercase text-4xl sm:text-6xl font-semibold text-center sm:px-20 text-primary-green'>
+                        A new way to<br /> {title}
+                    </h1>
+                </div>
             </div>
-            <div className="flex justify-center items-center bg-[#c0e8c0]">
-                <h1 className='uppercase text-6xl font-semibold text-center px-20 text-primary-green'>
-                    A new way <br /> to feed the world
-                </h1>
-            </div>
-        </div>
-    </>
-  )
+        </>
+    )
 }
 
 export default Solutions

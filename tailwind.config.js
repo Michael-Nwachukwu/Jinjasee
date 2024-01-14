@@ -8,6 +8,9 @@ export default {
     colors: {
       'primary-green': '#004e35',
       'light-green': '#88e53e',
+      'peach-green': '#c0e8c0',
+      'lemon-green': '#00c672',
+      'sand-green': '#fbf4eb',
     },
     extend: {},
   },

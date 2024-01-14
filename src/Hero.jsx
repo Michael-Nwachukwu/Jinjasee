@@ -3,7 +3,7 @@ import React from 'react'
 const Hero = () => {
   return (
     <>
-        <div className="flex flex-col-reverse sm:flex-row justify-around gap-10 sm:gap-32 text-light-green px-5 pt-12 sm:pt-40 pb-10 bg-primary-green mt-20">
+        <div className="flex flex-col-reverse sm:flex-row justify-around gap-10 sm:gap-32 text-light-green px-5 pt-12 sm:pt-52 pb-10 bg-primary-green mt-10">
             <div className="flex flex-col justify-between items-start sm:pt-5 sm:pl-10 gap-8">
                 <div className='text-xl'>We're a crop health company, here to change how the world grows.</div>
                 <a href='#' className='inline-flex items-center gap-1 font-medium hover:border-b'>
