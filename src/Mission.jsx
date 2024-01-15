@@ -23,7 +23,7 @@ const Mission = () => {
 
   return (
     <>
-        <section className='bg-sand-green py-12'>
+        <section className='bg-sand-green pt-12 sm:py-12'>
             <h1 className="mx-auto text-center uppercase text-5xl sm:text-8xl text-primary-green font-semibold">our <br /> mission</h1>
             <div className="flex justify-center">
                 <div className="w-full max-w-4xl px-2 py-16 sm:px-0">
