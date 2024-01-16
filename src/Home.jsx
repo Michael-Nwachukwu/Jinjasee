@@ -5,6 +5,7 @@ import Solutions from './Solutions'
 import Mission from './Mission'
 import Stat from './Stat'
 import Products from './Products'
+import Update from './Update'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
             <Mission />
             <Stat />
             <Products />
+            <Update />
         </Layout>
     </>
   )

@@ -24,7 +24,7 @@ const Mission = () => {
   return (
     <>
         <section className='bg-sand-green pt-12 sm:py-12'>
-            <h1 className="mx-auto text-center uppercase text-5xl sm:text-8xl text-primary-green font-semibold">our <br /> mission</h1>
+            <h1 className="mx-auto text-center uppercase text-4xl sm:text-8xl text-primary-green font-semibold">our <br /> mission</h1>
             <div className="flex justify-center">
                 <div className="w-full max-w-4xl px-2 py-16 sm:px-0">
                     <Tab.Group>
@@ -34,7 +34,7 @@ const Mission = () => {
                                     key={category}
                                     className={({ selected }) =>
                                         classNames(
-                                            'w-full py-2.5 text-md font-medium leading-5 text-primary-green',
+                                            'w-full py-2.5 text-xs sm:text-md font-medium leading-5 text-primary-green',
                                             'focus:outline-none',
                                             selected
                                                 ? 'border-b border-primary-green'
@@ -42,7 +42,7 @@ const Mission = () => {
                                         )
                                     }
                                 >
-                                {category}
+                                    {category}
                                 </Tab>
                             ))}
                         </Tab.List>
@@ -51,7 +51,7 @@ const Mission = () => {
                                 <Tab.Panel
                                     key={idx}
                                     className={classNames(
-                                        'px-10 py-6 text-xl font-medium text-primary-green text-center'
+                                        'px-4 sm:px-10 py-6 text-xl font-medium text-primary-green text-left sm:text-center'
                                     )}
                                 >
                                     {post}

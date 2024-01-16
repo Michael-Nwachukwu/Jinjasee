@@ -7,7 +7,7 @@ const Hero = () => {
     return (
         <>
             <div className="flex flex-col-reverse sm:flex-row justify-around gap-10 sm:gap-10 text-light-green px-5 pt-12 sm:pt-52 pb-10 bg-primary-green mt-10">
-                <div className="flex flex-col justify-between items-start sm:pt-5 sm:pl-0 gap-8">
+                <div className="flex flex-col justify-between items-start sm:pt-5 gap-8">
                     <Typewriter words={"We're a crop health company, here to change how the world grows."}/>
                     <PrimBtn text={'CONTACT US'} link={'/'} />
                 </div>

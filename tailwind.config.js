@@ -11,6 +11,8 @@ export default {
       'peach-green': '#c0e8c0',
       'lemon-green': '#00c672',
       'sand-green': '#fbf4eb',
+      'muted': '#d1d5db',
+      'black': '#111111',
     },
     extend: {},
   },

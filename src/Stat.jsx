@@ -109,7 +109,7 @@ const Stat = () => {
                                 opacity: { duration: 1 }
                             }}
                         >
-                            <div className="absolute bottom-[70%] top-[30%] sm:bottom-[60%] sm:top-[40%] sm:left-10 w-full h-full bg-black bg-opacity-40 text-sand-green text-2xl sm:text-5xl z-40 font-semibold text-opacity-70 px-5">{images[imageIndex].title}</div>
+                            <div className="absolute bottom-[70%] top-[30%] sm:bottom-[60%] sm:top-[40%] sm:left-10 w-full h-full text-sand-green text-2xl sm:text-5xl z-40 font-semibold text-opacity-70 px-5">{images[imageIndex].title}</div>
                             <img src={images[imageIndex].img} className='w-full h-full object-cover' style={{ filter: 'brightness(50%)' }} alt="" />
                         </motion.div>
                     </AnimatePresence>

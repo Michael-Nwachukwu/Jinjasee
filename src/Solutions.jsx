@@ -30,7 +30,7 @@ const Solutions = () => {
                     <img src={country} alt="" />
                 </div>
                 <div className={`flex justify-center items-center  ${bgColors[titles.indexOf(title)]} h-96 sm:h-auto soln`}>
-                    <h1 className='uppercase text-4xl sm:text-6xl font-semibold text-center sm:px-20 text-primary-green'>
+                    <h1 className='uppercase text-3xl sm:text-6xl font-semibold text-center px-10 sm:px-20 text-primary-green'>
                         A new way to<br /> {title}
                     </h1>
                 </div>
