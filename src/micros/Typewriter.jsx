@@ -3,7 +3,7 @@ import TextGenerateEffect from './TextGenerateEffect'
 
 const Typewriter = ({ words }) => {
     return (
-        <div className='text-2xl leading-snug tracking-wide'>
+        <div className='text-xl leading-snug tracking-wide '>
             <TextGenerateEffect words={words} />
         </div>
     )

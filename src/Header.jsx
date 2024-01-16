@@ -1,25 +1,156 @@
-import React from 'react'
+import React, { useState } from 'react'
 import logo from './assets/jinijasee.png'
+import single from './assets/Jinjasee-deep-single.png'
+import { Link } from 'react-router-dom'
+import { BrowserRouter as Router } from 'react-router-dom'
+import { AnimatePresence, motion } from 'framer-motion'
+
+const navLinks = [
+    {title: 'Our product', href: '/'},
+    {title: 'About', to: '/'},
+    {title: 'Updates', to: '/'},
+    {title: 'Contact', to: '/'},
+]
+
+const navLinkVars = {
+    initial: {
+        y: "30vh",
+        transition: {
+            duration: 0.5,
+            ease: [0.37, 0, 0.63, 1]
+        }
+    }, 
+    open: {
+        y: 0,
+        transition: {
+            duration: 0.7,
+            ease: [0, 0.55, 0.45, 1]
+        }
+    },
+}
+
+const NavLink = ({title, to}) => {
+    return (
+        <motion.div 
+            variants={navLinkVars}
+            
+        >
+            <Link to={to} className="hover:text-opacity-50 cursor-pointer">{title}</Link>
+        </motion.div>
+    )
+}
 
 const Header = () => {
-  return (
-    <>
-        <header className="body-font bg-primary-green text-light-green font-medium fixed top-0 left-0 right-0 z-10 -mt-1">
-            <div className="mx-auto flex flex-wrap px-5 items-center justify-between pt-3 pb-5">
-                <a className="">
-                    <img src={logo} className='h-8 sm:h-10' alt="" />
-                </a>
-                <a href="#" className='sm:hidden mobile-menu-btn'>MENU</a>
-                <nav className="flex-wrap items-center text-base justify-center gap-10 uppercase hidden sm:flex">
-                    <a className="hover:text-gray-900 cursor-pointer">our products</a>
-                    <a className="hover:text-gray-900 cursor-pointer">about</a>
-                    <a className="hover:text-gray-900 cursor-pointer">updates</a>
-                    <a className="hover:text-gray-900 cursor-pointer">contact</a>
-                </nav>
-            </div>
-        </header>  
-    </>
-  )
+    const [open, setOpen] = useState(false);
+    const toggleMenu = () => {
+        setOpen(prevOpen => !prevOpen);
+    }
+
+    const menuVars = {
+        initial: {
+            scaleY: 0,
+        },
+        animate: {
+            scaleY: 1,
+            transition: {
+                // type: "spring",
+                duration: 0.3,
+                ease: [0.12, 0, 0.39, 0]
+            }
+        },
+        exit: {
+            scaleY: 0,
+            transition: {
+                delay: 0.5,
+                duration: 0.5,
+                ease: [0.22, 1, 0.36, 1]
+            }
+        }
+    }
+
+    const containerVars = {
+        initial: {
+            // for when its enters and leaves
+            transition: {
+                staggerChildren: 0.09,
+                staggerDirection: -1
+            },
+            // for when its open
+            open: {
+                transition: {
+                    delayChildren: 0.3,
+                    staggerChildren: 0.09,
+                    staggerDirection: 1
+                },
+            }
+
+        }
+    }
+
+    return (
+        <>
+            <Router>
+                <header className="body-font bg-primary-green text-light-green font-medium fixed top-0 left-0 right-0 z-10 -mt-1">
+                    <div className="mx-auto flex flex-wrap px-5 items-center justify-between pt-3 pb-5">
+                        <a className="">
+                            <img src={logo} className='h-8 sm:h-10' alt="" />
+                        </a>
+                        <p onClick={toggleMenu} href="#" className='sm:hidden mobile-menu-btn'>MENU</p>
+                        <nav className="flex-wrap items-center text-base justify-center gap-10 uppercase hidden sm:flex">
+                            {navLinks.map((link, index) => {
+                                return <NavLink key={index} title={link.title} to={link.to} />
+                            })}
+                        </nav>
+                    </div>
+                    <AnimatePresence>
+                        {
+                            open && (
+                                <motion.div 
+                                    variants={menuVars}
+                                    initial="initial"
+                                    animate="animate"
+                                    exit="exit"
+                                    className="fixed left-0 top-0 w-full h-screen origin-top bg-sand-green text-primary-green px-5 py-3">
+                                    <div className="flex h-full flex-col">
+                                        <div className="flex justify-between items-center">
+                                            <img src={single} className='h-9' alt="" />
+                                            <p onClick={toggleMenu} className="uppercase text-xl">close</p>
+                                        </div>
+                                        <div className="flex flex-col justify-between h-full">
+                                            <motion.nav 
+                                                variants={containerVars}
+                                                initial='initial'
+                                                animate="open"
+                                                exit={'initial'}
+                                                className="flex flex-col justify-start items-start text-2xl font-medium gap-6 mt-16">
+                                                {navLinks.map((link, index) => {
+                                                    return (
+                                                        <div className="overflow-hidden">
+                                                            <NavLink key={index} title={link.title} to={link.to} />
+                                                        </div>
+                                                    )
+                                                })}
+                                            </motion.nav>
+                                            <div className="mb-4">
+                                                <p className="text-xl font-semibold pb-3">info@jinjasee.com</p>
+                                                <span className='uppercase space-x-3 text-xs'>
+                                                    <a href="#">x</a>
+                                                    <a href="#">twitter</a>
+                                                    <a href="#">linkedin</a>
+                                                    <a href="#">facebook</a>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </motion.div>
+                            )
+                        }
+                    </AnimatePresence>
+
+                </header>  
+            </Router>
+        </>
+    );
 }
 
 export default Header

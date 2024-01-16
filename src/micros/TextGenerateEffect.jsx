@@ -36,7 +36,7 @@ const TextGenerateEffect = ({ words, className }) => {
   };
 
   return (
-    <div className={cn("font-bold", className)}>
+    <div className={cn("font-medium sm:font-bold", className)}>
           {renderWords()}
     </div>
   );
