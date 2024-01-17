@@ -81,7 +81,7 @@ const Header = () => {
             <motion.div 
                 variants={navLinkVars}
             >
-                <Link to={to} onClick={toggleMenu} className="hover:text-opacity-50 cursor-pointer">{title}</Link>
+                <Link to={to} className="hover:text-opacity-50 cursor-pointer">{title}</Link>
             </motion.div>
         )
     }
@@ -124,8 +124,8 @@ const Header = () => {
                                             className="flex flex-col justify-start items-start text-2xl font-medium gap-6 mt-16">
                                             {navLinks.map((link, index) => {
                                                 return (
-                                                    <div className="overflow-hidden">
-                                                        <NavLink key={index} title={link.title} to={link.to} />
+                                                    <div onClick={toggleMenu} className="overflow-hidden">
+                                                        <NavLink key={index}  title={link.title} to={link.to} />
                                                     </div>
                                                 )
                                             })}

@@ -7,7 +7,7 @@ import Heading from '../micros/Heading'
 const ChevronUpIcon = ({open}) => {
     return (
         <svg 
-            className={`transform ${open ? 'rotate-180' : ''} transition-transform ease-in-out duration-500 h-8 w-8`}
+            className={`transform ${open ? 'rotate-180' : ''} transition-transform ease-in-out duration-500 h-6 sm:h-8 w-6 sm:w-8`}
             viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
         >
             <circle cx="16" cy="16" r="16" transform="rotate(90 16 16)" fill="#004E35"/>
@@ -38,7 +38,7 @@ const AboutBlock = () => {
                             <Disclosure>
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className={`flex w-full justify-between py-5 text-left text-2xl font-medium focus:outline-none ${ open ? 'border-t' : 'border-y'} border-primary-green`}>
+                                        <Disclosure.Button className={`flex w-full justify-between items-center py-5 text-left text-lg sm:text-2xl font-medium focus:outline-none ${ open ? 'border-t' : 'border-y'} border-primary-green`}>
                                             <span>What is your refund policy?</span>
                                             <ChevronUpIcon
                                                 open={open}
@@ -52,7 +52,7 @@ const AboutBlock = () => {
                                             leaveFrom="transform translate-y-0 opacity-100"
                                             leaveTo="transform -translate-y-full opacity-0"
                                         >
-                                            <Disclosure.Panel className="border-b border-primary-green pb-4 pt-3 text-lg">
+                                            <Disclosure.Panel className="border-b border-primary-green pb-4 pt-3 text-md sm:text-lg">
                                                 If you're unhappy with your purchase for any reason, email us
                                                 within 90 days and we'll refund you in full, no questions asked.
                                             </Disclosure.Panel>
@@ -63,7 +63,7 @@ const AboutBlock = () => {
                             <Disclosure as="div" className="mt-2">
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className={`flex w-full justify-between pt-3 pb-5 text-left text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
+                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-lg sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
                                             <span>Do you offer technical support?</span>
                                             <ChevronUpIcon
                                                 open={open}
@@ -77,7 +77,7 @@ const AboutBlock = () => {
                                             leaveFrom="transform translate-y-0 opacity-100"
                                             leaveTo="transform -translate-y-full opacity-0"
                                         >    
-                                            <Disclosure.Panel className="border-b border-primary-green pb-4 pt-3 text-lg">
+                                            <Disclosure.Panel className="border-b border-primary-green pb-4 pt-3 text-md sm:text-lg">
                                                 If you're unhappy with your purchase for any reason, email us
                                                 within 90 days and we'll refund you in full, no questions asked.
                                             </Disclosure.Panel>
@@ -88,7 +88,7 @@ const AboutBlock = () => {
                             <Disclosure as="div" className="mt-2">
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className={`flex w-full justify-between pt-3 pb-5 text-left text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
+                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-lg sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
                                             <span>Do you offer technical support?</span>
                                             <ChevronUpIcon
                                                 open={open}
@@ -102,7 +102,7 @@ const AboutBlock = () => {
                                             leaveFrom="transform translate-y-0 opacity-100"
                                             leaveTo="transform -translate-y-full opacity-0"
                                         >    
-                                            <Disclosure.Panel className="border-b border-primary-green pb-4 pt-3 text-lg">
+                                            <Disclosure.Panel className="border-b border-primary-green pb-4 pt-3 text-md sm:text-lg">
                                                 If you're unhappy with your purchase for any reason, email us
                                                 within 90 days and we'll refund you in full, no questions asked.
                                             </Disclosure.Panel>
@@ -113,12 +113,6 @@ const AboutBlock = () => {
                         </div>
                     </div>
 
-                </div>
-            </div>
-            <Stat />
-            <div>
-                <div className='mb-3 py-12 pl-4 sm:py-14'>
-                    <Heading heading={"Our\nTeam"} />
                 </div>
             </div>
         </section>
