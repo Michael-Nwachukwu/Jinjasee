@@ -1,7 +1,8 @@
 import React from 'react'
-import logo from './assets/logo.png'
+import logo from '../assets/logo.png'
 // import logo from './assets/jinijasee.png'
-import bldn from './assets/bldn-wheat.png'
+import bldn from '../assets/bldn-wheat.png'
+
 
 const Footer = () => {
     return (
@@ -36,10 +37,10 @@ const Footer = () => {
                     <div className='space-y-1'>
                         <h3>socials</h3>
                         <ul className='text-muted'>
-                            <li>linkedin</li>
-                            <li>x</li>
-                            <li>twitter</li>
-                            <li>facebook</li>
+                            <li><a href="#">linkedin</a></li>
+                            <li><a href="#">x</a></li>
+                            <li><a href="#">twitter</a></li>
+                            <li><a href="#">facebook</a></li>
                         </ul>
                     </div>
                 </div>

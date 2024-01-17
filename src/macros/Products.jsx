@@ -1,7 +1,6 @@
 import React from 'react'
-import pic from './assets/product-image.png'
-import PrimBtn from './micros/PrimBtn'
-import TextGenerateEffect from './micros/TextGenerateEffect'
+import pic from '../assets/product-image.png'
+import PrimBtn from '../micros/PrimBtn'
 
 const Products = () => {
     return (

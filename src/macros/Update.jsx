@@ -1,6 +1,6 @@
 import React from 'react'
-import blogOne from './assets/blog-one.png'
-import blogTwo from './assets/blog-two.png'
+import blogOne from '../assets/blog-one.png'
+import blogTwo from '../assets/blog-two.png'
 
 const Update = () => {
     return (

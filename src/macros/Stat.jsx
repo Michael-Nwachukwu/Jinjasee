@@ -1,7 +1,7 @@
 import React from 'react'
-import onion from './assets/onion.jpg'
+import onion from '../assets/onion.jpg'
 // import onionTwo from './assets/onion-2.jpg'
-import rottenOnion from './assets/rotten-onion.jpg'
+import rottenOnion from '../assets/rotten-onion.jpg'
 import { useState, useEffect, useRef } from "react";
 import { AnimatePresence, motion, useInView } from "framer-motion";
 import { wrap } from 'framer-motion';
