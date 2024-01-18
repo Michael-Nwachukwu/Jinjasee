@@ -8,7 +8,7 @@ const Footer = () => {
 
     const navLinks = [
         {title: 'About Jinjasee', to: '/about-jinjasee'},
-        {title: 'Explore our product', to: '/our-product'},
+        {title: 'our product', to: '/our-product'},
         {title: 'Recent Updates', to: '/our-blog'},
         {title: 'Keep in touch', to: '/contact-jinjasee'},
     ];

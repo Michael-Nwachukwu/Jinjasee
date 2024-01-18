@@ -7,17 +7,17 @@ function classNames(...classes) {
 
 const Mission = () => {
     let [categories] = useState({
-        "Take action": [
-          "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sed architecto optio expedita quaerat debitis neque incidunt, at qui reiciendis recusandae ut dolorum esse quas in, quos et accusantium dolor."
+        "Sustain agriculture": [
+          "Pioneering solutions to minimize post-harvest losses and strengthen global food security by introducing cutting-edge practices and technologies."
         ],
-        "Change the game": [
-          "gwarn Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sed architecto optio expedita quaerat debitis neque incidunt, at qui reiciendis recusandae ut dolorum esse quas in, quos et accusantium dolor."
+        "Consumer-Centric": [
+          "Designing and delivering products that resonate with the evolving needs of consumers, restaurants, and food processors, ensuring versatility and satisfaction."
         ],
-        "Make an impact": [
-          "tusk Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sed architecto optio expedita quaerat debitis neque incidunt, at qui reiciendis recusandae ut dolorum esse quas in, quos et accusantium dolor."
+        "Empower Farmers:": [
+          "Dedication to improving the lives of small-holder farmers by implementing strategies that reduce post-harvest losses, boost agricultural efficiency, and contribute to sustainable livelihoods."
         ],
-        "Set new standards": [
-            "sifu Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam sed architecto optio expedita quaerat debitis neque incidunt, at qui reiciendis recusandae ut dolorum esse quas in, quos et accusantium dolor."
+        "Always Available": [
+            "Ensuring a consistent and uninterrupted supply of farm produce throughout the year, breaking free from seasonal constraints to meet the demands of consumers and maintain a reliable food source."
         ],
     })
 
@@ -34,7 +34,7 @@ const Mission = () => {
                                     key={category}
                                     className={({ selected }) =>
                                         classNames(
-                                            'w-full py-2.5 text-xs sm:text-md font-medium leading-5 text-primary-green',
+                                            'w-full py-2.5 text-xs sm:text-lg font-medium leading-5 text-primary-green',
                                             'focus:outline-none',
                                             selected
                                                 ? 'border-b border-primary-green'

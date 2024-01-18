@@ -26,11 +26,24 @@ const AboutBlock = () => {
             </div>
             <div className="grid sm:grid-cols-2 gap-6 sm:gap-24 mx-5 sm:mx-8 text-primary-green">
                 <div>
-                    <p className="font-semibold text-2xl sm:text-xl">We're on a mission to help farmers provide for the planet, without harming the earth.</p>
+                    <p className="font-semibold text-2xl sm:text-xl">We're on a mission to reduce post harvest loss. Provide all year availability of farm produce and  help farmers max their potential without fear of producing "too much"</p>
                 </div>
                 <div>
-                    <p className="font-medium text-md">We believe that creating the future the world wants requires changing how the world grows. That’s why Enko® discovers and develops novel products for farmers to protect their crops from pests and disease. Our discovery platform, ENKOMPASS™, uses DNA-encoded libraries, AI, Structure-Based Design, and Machine Learning to find and select the right treatments for the right targets faster and more effectively than traditional R&D methods. By providing farmers with new tools to grow their crops successfully and sustainably, we hope to open the door for increased adoption of other data-driven and emerging technologies in agriculture.
-                    Led by a team of proven scientists, entrepreneurs, and industry veterans, Enko’s innovative science, agile design, and discovery of new modes of action is producing next-generation crop protection solutions that will overcome critical challenges facing the industry.</p>
+                    <div className="font-medium text-md space-y-4"> 
+                    
+                        <p>
+                            Jinjasee Global LTD is a pioneering food processing company located in Lagos, Nigeria. Our business is dedicated to creating sustainable post-harvest solutions through a combination of high-quality food processing and consulting services. We understand the critical need to reduce food waste and enhance the value of agricultural produce. 
+                        </p>
+
+                        <p>
+                            Our food processing endeavors focus on turning fresh, locally sourced ingredients, like onions, into long-lasting, convenient products, such as natural onion paste, that offer consumers both nutritional benefits and ease of use. Simultaneously, our consulting services extend support to farmers and producers, providing them with the knowledge and tools to improve post-harvest practices, reduce losses, and enhance the overall quality and shelf life of their products. 
+                        </p>
+                        
+                        <p>
+                            Our integrated approach not only reduces food wastage but also aids in boosting local economies, promoting sustainable agriculture, and ensuring that consumers have access to healthier options.
+                        </p>
+                    
+                    </div>
 
 
                     <div className="w-full py-8">

@@ -2,28 +2,28 @@ import React from 'react'
 
 const data = [
     {
-        problem: "From massive physical infrastructure",
-        solution: "To small, scalable footprint"
+        problem: "Wasting Time on Onion Preparation",
+        solution: "Our onion paste eliminates the time-consuming process of peeling and chopping onions."
     },
     {
-        problem: "From massive physical infrastructure",
-        solution: "To small, scalable footprint"
+        problem: "Affordability Barrier",
+        solution: "Our onion product meets high-quality standards, yet budget-friendly."
     },
     {
-        problem: "From massive physical infrastructure",
-        solution: "To small, scalable footprint"
+        problem: "Eye Irritation during Onion Preparation",
+        solution: "A tear-free onion paste."
     },
     {
-        problem: "From massive physical infrastructure",
-        solution: "To small, scalable footprint"
+        problem: "Short Shelf Life of Onions",
+        solution: "Ensuring a longer shelf life for our onion paste without compromising on freshness."
     },
     {
-        problem: "From massive physical infrastructure",
-        solution: "To small, scalable footprint"
+        problem: "Limited Culinary Creativity with Onions",
+        solution: "Versatile onion paste that enhances a wide range of recipes, encourages you to do more."
     },
     {
-        problem: "From massive physical infrastructure",
-        solution: "To small, scalable footprint"
+        problem: "Missing Out on Onion's Natural Health Benefits",
+        solution: "Retaining the natural health benefits of onions in our product, contributing to the overall well-being of our consumers."
     },
 ]
 
@@ -43,10 +43,10 @@ const Benefits = () => {
                 {data.map((data, index) => {
                     return(
                         <li key={index} className="flex justify-between items-center border-b border-primary-green py-4">
-                            <p className="text-[#a8a29e] text-sm sm:text-xl font-medium">
+                            <p className="text-[#a8a29e] text-sm sm:text-xl font-medium w-2/4">
                                 {data.problem}
                             </p>
-                            <p className="text-primary-green text-sm sm:text-xl font-medium text-right">
+                            <p className="text-primary-green text-sm sm:text-xl font-medium text-right w-2/4">
                                 {data.solution}
                             </p>
                         </li>

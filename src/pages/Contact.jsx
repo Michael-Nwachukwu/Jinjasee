@@ -6,7 +6,7 @@ const Contact = () => {
             <div className="grid sm:grid-cols-2 gap-10 sm:gap-0">
                 <div className='max-w-md flex flex-col justify-between gap-10'>
                     <div className='text-2xl sm:text-4xl font-medium'>
-                        Thank you for your interest in Enko®! Please fill out our form here and a team member will be in touch.
+                        Thank you for your interest in Jinjasee! Please fill out our form here and a team member will be in touch.
                     </div>
                     <div className="flex flex-col gap-3 font-normal text-md">
                         <p>info@jinjasee.com</p>
