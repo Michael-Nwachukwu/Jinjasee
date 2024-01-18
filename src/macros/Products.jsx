@@ -13,7 +13,7 @@ const Products = () => {
                     <img src={pic} className='rounded-2xl' alt="" />
                 </div>
                 <div className="flex flex-col-reverse pl-5 sm:flex-col justify-between items-start py-3 gap-5">
-                    <PrimBtn text={"order"} link={'/'} />
+                    <PrimBtn primaryBtnText={'order now'} />
                     <p className='text-2xl text-light-green font-light'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique minima laboriosam ipsum tempore aut sunt deleniti explicabo animi odit.</p>
                     <h1 className="text-light-green font-semibold text-5xl sm:text-7xl">Natural Paste Onion +</h1>
                 </div>

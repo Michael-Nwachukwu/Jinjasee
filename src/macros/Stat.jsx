@@ -72,56 +72,75 @@ const Stat = () => {
         return () => clearInterval(interval);
     }, [page]);
 
-    return (
-        <>
-            <AnimatePresence initial={false} custom={direction}>
-                <motion.img
-                    key={page}
-                    alt=""
-                    className='img h-full w-full object-cover'
-                    style={{ filter: 'brightness(50%)' }}
-                    src={images[imageIndex].img}
-                    custom={direction}
-                    variants={variants}
-                    initial="enter"
-                    animate="center"
-                    exit="exit"
-                    transition={{
-                      x: { type: "spring", stiffness: 300, damping: 30, duration:0.3 },
-                      opacity: { duration: 0.2 },
-                    }}
-                    drag="x"
-                    dragConstraints={{ left: 0, right: 0 }}
-                    dragElastic={1}
-                    onDragEnd={(e, { offset, velocity }) => {
-                      const swipe = swipePower(offset.x, velocity.x);
-          
-                      if (swipe < -swipeConfidenceThreshold) {
-                        paginate(1);
-                      } else if (swipe > swipeConfidenceThreshold) {
-                        paginate(-1);
-                      }
-                    }}
-                />
-                    
-                    <motion.div 
-                        key={page}
-                        custom={direction}
-                        variants={variants}
-                        initial="enter"
-                        animate="center"
-                        exit="exit"
-                        transition={{
-                          x: { type: "spring", stiffness: 300, damping: 30, duration:0.3 },
-                          opacity: { duration: 0.2 }
-                        }}
-                        className="absolute flex justify-center items-center w-full h-full text-sand-green text-xl sm:text-5xl z-50 font-semibold text-center
-                    ">{images[imageIndex].title}</motion.div>
-                        
-                   
-            </AnimatePresence>
-        </>
-    );
+  return (
+    <>
+      <AnimatePresence initial={false} custom={direction}>
+        <motion.img
+          key={page}
+          alt=""
+          className='img h-full w-full object-cover'
+          style={{ filter: 'brightness(50%)' }}
+          src={images[imageIndex].img}
+          custom={direction}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30, duration:0.3 },
+            opacity: { duration: 0.2 },
+          }}
+          drag="x"
+          dragConstraints={{ left: 0, right: 0 }}
+          dragElastic={1}
+          onDragEnd={(e, { offset, velocity }) => {
+            const swipe = swipePower(offset.x, velocity.x);
+
+            if (swipe < -swipeConfidenceThreshold) {
+              paginate(1);
+            } else if (swipe > swipeConfidenceThreshold) {
+              paginate(-1);
+            }
+          }}
+        />
+              
+        <motion.div 
+          key={page}
+          custom={direction}
+          variants={variants}
+          initial="enter"
+          animate="center"
+          exit="exit"
+          transition={{
+            x: { type: "spring", stiffness: 300, damping: 30, duration:0.3 },
+            opacity: { duration: 0.2 }
+          }}
+          className="absolute flex justify-center items-center w-full h-full text-sand-green text-xl sm:text-5xl z-50 font-semibold text-center
+        ">
+          {images[imageIndex].title}
+        </motion.div>
+        
+        <motion.div key={page} className="absolute flex justify-center bottom-8 sm:bottom-20 z-50">
+          <div className="border border-sand-green rounded-3xl inline-flex items-center gap-3 sm:gap-4 p-2">
+
+            <div onClick={() => paginate(-1)} className="hover:bg-sand-green rounded-full p-1 text-sand-green hover:text-primary-green">
+              <svg xmlns="http://www.w3.org/2000/svg" fill='none' stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" className="fill-sand-green w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+              </svg>
+            </div>
+
+            <div onClick={() => paginate(1)} className="hover:bg-sand-green rounded-full p-1 text-sand-green hover:text-primary-green">
+              <svg xmlns="http://www.w3.org/2000/svg" fill='none' stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" className="fill-sand-green w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              </svg>
+            </div>
+
+          </div>
+        </motion.div>
+
+      </AnimatePresence>
+    </>
+  );
 
 
   

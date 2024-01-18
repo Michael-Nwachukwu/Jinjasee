@@ -1,14 +1,15 @@
 import React from 'react'
 import blogOne from '../assets/blog-one.png'
 import blogTwo from '../assets/blog-two.png'
+import Heading from '../micros/Heading'
 
 const Update = () => {
     return (
         <section className='bg-sand-green pb-16 sm:pb-32 pt-3'>
-            <div className='mb-3'>
-                <h1 className='font-semibold text-5xl sm:text-[8em] text-primary-green text-left uppercase leading-none py-12 pl-4 sm:p-14'>latest <br /> updates</h1>
+            <div className='mb-3 py-12 pl-4 sm:py-14'>
+                <Heading heading={'latest\nUpdates'} />
             </div>
-            <div className="grid sm:grid-cols-2 gap-5 mx-3 sm:mx-5">
+            <div className="grid sm:grid-cols-2 gap-8 sm:gap-5 mx-3 sm:mx-5">
                 <div className='text-primary-green space-y-4'>
                     <div className='zoom-effect'>
                         <img src={blogOne} className='' alt="" />

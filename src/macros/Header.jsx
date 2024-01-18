@@ -1,17 +1,37 @@
 import React, { useState } from 'react'
-import logo from '../assets/jinijasee.png'
+import lightLogo from '../assets/jinijasee.png'
+import deepLogo from '../assets/Jinjasee-deep.png'
 import single from '../assets/Jinjasee-deep-single.png'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 
 const navLinks = [
-    {title: 'Our product', href: '/'},
+    {title: 'Our product', to: '/our-product'},
     {title: 'About', to: '/about-jinjasee'},
-    {title: 'Updates', to: '/'},
-    {title: 'Contact', to: '/'},
+    {title: 'Updates', to: '/our-blog'},
+    {title: 'Contact', to: '/contact-jinjasee'},
 ]
 
+
 const Header = () => {
+
+    const location = useLocation();
+
+    let bg;
+    let logo;
+    let textColor
+    
+    if (location.pathname === '/contact-jinjasee') {
+        bg = "bg-sand-green";
+        logo = deepLogo;
+        textColor = "text-primary-green";
+    }else{
+        bg = "bg-primary-green";
+        logo = lightLogo;
+        textColor = "text-light-green";
+    }
+
+
     const [open, setOpen] = useState(false);
 
     const toggleMenu = () => {
@@ -89,8 +109,8 @@ const Header = () => {
     return (
         <>
             
-            <header className="body-font bg-primary-green text-light-green font-medium fixed top-0 left-0 right-0 z-10 -mt-1">
-                <div className="mx-auto flex flex-wrap px-5 items-center justify-between pt-3 pb-5">
+            <header className={`body-font ${bg} ${textColor} ${location.pathname === '/contact-jinjasee' ? 'border-b border-primary-green border-opacity-20' : ''} font-medium fixed top-0 left-0 right-0 z-10 -mt-1`}>
+                <div className="mx-auto flex flex-wrap px-5 items-center justify-between pt-4 pb-3">
                     <Link to={'/'} className="">
                         <img src={logo} className='h-8 sm:h-10' alt="" />
                     </Link>
