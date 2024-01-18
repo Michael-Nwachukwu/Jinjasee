@@ -62,3 +62,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   position: absolute;
   max-width: 100vw;
 }
+
+.bfg{
+  border-bottom: 1px solid red;
+}

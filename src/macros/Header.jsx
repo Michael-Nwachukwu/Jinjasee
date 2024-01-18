@@ -16,6 +16,7 @@ const navLinks = [
 const Header = () => {
 
     const location = useLocation();
+    const currentIndex = navLinks.findIndex(link => link.to === location.pathname);
 
     let bg;
     let logo;
@@ -30,6 +31,9 @@ const Header = () => {
         logo = lightLogo;
         textColor = "text-light-green";
     }
+
+
+
 
 
     const [open, setOpen] = useState(false);
@@ -101,7 +105,7 @@ const Header = () => {
             <motion.div 
                 variants={navLinkVars}
             >
-                <Link to={to} className="hover:text-opacity-50 cursor-pointer">{title}</Link>
+                <Link to={to} className={`hover:text-opacity-50 cursor-pointer ${to === location.pathname ? 'sm:border-b border-light-green' : ''}`}>{title}</Link>
             </motion.div>
         )
     }
