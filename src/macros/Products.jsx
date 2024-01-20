@@ -10,7 +10,7 @@ const Products = () => {
             </div>
             <div className="grid sm:grid-cols-2 gap-5 sm:gap-0">
                 <div className='px-4 sm:px-24'>
-                    <img src={pic} className='rounded-2xl' alt="" />
+                    <img src={pic} className='rounded-2xl' alt="Image showing the Natural paste onion plus by jinjasee global ltd" />
                 </div>
                 <div className="flex flex-col-reverse pl-5 sm:flex-col justify-between items-start py-3 gap-5">
                     <PrimBtn primaryBtnText={'order now'} />

@@ -9,19 +9,19 @@ import { wrap } from 'framer-motion';
 
 const images = [
     {
-        title: `"At Enko, I don't feel like an individual working a job.
-        We're a company united working on a mission."`,
-        img: rottenOnion
+        title: `Did you know? The onion produced in Nigeria amount to more than N700bn but about 40 to 50 per cent of the product worth over N300 billion is wasted to post harvest losses.`,
+        img: rottenOnion,
+        alt: "Image of rotten wasted Onion lost to post harvest loss"
     },
     {
-        title: `"At2 Enko, I don't feel like an individual working a job.
-        We're a company united working on a mission."`,
-        img: topView
+        title: `We are changing the narrative, promoting sustainable agriculture. We're a company united working on a mission.`,
+        img: topView,
+        alt: "Large scale onion farm. encouraging farmers to produce more without fear of loss"
     },
     {
-        title: `"At3 Enko, I don't feel like an individual working a job.
-        We're a company united working on a mission."`,
-        img: onion
+        title: `All year availability; this means youll never lack onions in your kitchen... all year.`,
+        img: onion,
+        alt: "Harvested onion ready for processing and pasting for consumers"
     },
 ]
 
@@ -77,7 +77,7 @@ const Stat = () => {
       <AnimatePresence initial={false} custom={direction}>
         <motion.img
           key={page}
-          alt=""
+          alt={images[imageIndex].alt}
           className='img h-full w-full object-cover'
           style={{ filter: 'brightness(50%)' }}
           src={images[imageIndex].img}
@@ -115,12 +115,12 @@ const Stat = () => {
             x: { type: "spring", stiffness: 300, damping: 30, duration:0.3 },
             opacity: { duration: 0.2 }
           }}
-          className="absolute flex justify-center items-center w-full h-full text-sand-green text-xl sm:text-5xl z-50 font-semibold text-center
+          className="absolute flex justify-center items-center max-w-6xl h-full text-sand-green text-xl sm:text-5xl z-40 font-semibold text-center
         ">
           {images[imageIndex].title}
         </motion.div>
         
-        <motion.div key={page} className="absolute flex justify-center bottom-8 sm:bottom-20 z-50">
+        <motion.div key={page} className="absolute flex justify-center bottom-8 sm:bottom-20 z-20">
           <div className="border border-sand-green rounded-3xl inline-flex items-center gap-3 sm:gap-4 p-2">
 
             <div onClick={() => paginate(-1)} className="hover:bg-sand-green rounded-full p-1 text-sand-green hover:text-primary-green">
