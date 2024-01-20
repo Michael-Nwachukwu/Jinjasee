@@ -27,7 +27,7 @@ const Solutions = () => {
         <>
             <div className="grid sm:grid-cols-2">
                 <div>
-                    <img src={country} className='h-full' alt="Aerial view of huge farm meant to cultivating onions" />
+                    <img src={country} className='sm:h-full' alt="Aerial view of huge farm meant to cultivating onions" />
                 </div>
                 <div className={`flex justify-center items-center  ${bgColors[titles.indexOf(title)]} min-h-[30em] sm:h-auto soln`}>
                     <h1 className='uppercase text-3xl sm:text-4xl lg:text-6xl font-semibold text-center px-10 sm:px-20 text-primary-green'>

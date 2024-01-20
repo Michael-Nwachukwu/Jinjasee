@@ -1,7 +1,7 @@
 const Blog = [
     {
         id:1,
-        image:'/public/images/blog-one.png',
+        image:'/images/blog-one.png',
         alt:'lorem',
         date:'JANUARY 18, 2024',
         heading: 'Syngenta and Enko Accelerate the Discovery of Innovative Crop Protection Solutions',
@@ -42,7 +42,7 @@ const Blog = [
     },
     {
         id:2,
-        image:'/public/images/blog-two.png',
+        image:'/images/blog-two.png',
         alt:'lorem',
         date:'JANUARY 28, 2024',
         heading: 'Syngenta and Enko Accelerate the Discovery of Innovative Crop Protection Solutions',
