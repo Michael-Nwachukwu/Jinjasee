@@ -6,6 +6,7 @@ import Products from './pages/Products';
 import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import { HelmetProvider } from 'react-helmet-async';
+import Post from './pages/Post';
 
 function App() {
 
@@ -18,8 +19,9 @@ function App() {
               <Route path="/" index element={<Home />} />
               <Route path="/about-jinjasee" element={<About />} />
               <Route path="/our-product" element={<Products />} />
-              <Route path="/our-blog" element={<Blog />} />
+              <Route path="/blog" element={<Blog />} />
               <Route path="/contact-jinjasee" element={<Contact />} />
+              <Route path="/blog/post/:id" element={<Post />} />
             </Route>
           </Routes>
         </Router>

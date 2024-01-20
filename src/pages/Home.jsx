@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../macros/Hero'
 import Solutions from '../macros/Solutions'
 import Mission from '../macros/Mission'
@@ -9,6 +9,13 @@ import StatWrapper from '../layouts/StatWrapper'
 import SEO from '../Seo'
 
 const Home = () => {
+
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []); // Add id as a dependency to scroll to top when the id changes
+
+
   return (
     <>
       <SEO

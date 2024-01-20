@@ -115,7 +115,7 @@ const Stat = () => {
             x: { type: "spring", stiffness: 300, damping: 30, duration:0.3 },
             opacity: { duration: 0.2 }
           }}
-          className="absolute flex justify-center items-center max-w-6xl h-full text-sand-green text-xl sm:text-5xl z-40 font-semibold text-center
+          className="absolute flex justify-center items-center max-w-xs sm:max-w-2xl lg:max-w-6xl h-full text-sand-green text-xl sm:text-3xl lg:text-5xl z-40 font-semibold text-center
         ">
           {images[imageIndex].title}
         </motion.div>
@@ -124,14 +124,14 @@ const Stat = () => {
           <div className="border border-sand-green rounded-3xl inline-flex items-center gap-3 sm:gap-4 p-2">
 
             <div onClick={() => paginate(-1)} className="hover:bg-sand-green rounded-full p-1 text-sand-green hover:text-primary-green">
-              <svg xmlns="http://www.w3.org/2000/svg" fill='none' stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" className="fill-sand-green w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill='none' stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5" className="fill-sand-green w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75 3 12m0 0 3.75-3.75M3 12h18" />
               </svg>
             </div>
 
             <div onClick={() => paginate(1)} className="hover:bg-sand-green rounded-full p-1 text-sand-green hover:text-primary-green">
-              <svg xmlns="http://www.w3.org/2000/svg" fill='none' stroke="currentColor" viewBox="0 0 24 24" stroke-width="1.5" className="fill-sand-green w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+              <svg xmlns="http://www.w3.org/2000/svg" fill='none' stroke="currentColor" viewBox="0 0 24 24" strokeWidth="1.5" className="fill-sand-green w-6 h-6">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
               </svg>
             </div>
 

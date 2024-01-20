@@ -1,8 +1,16 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Hero from '../macros/Hero'
 import Update from '../macros/Update'
+import SEO from '../Seo'
 
 const Blog = () => {
+
+  useEffect(() => {
+    // Scroll to the top when the component mounts
+    window.scrollTo(0, 0);
+  }, []); // Add id as a dependency to scroll to top when the id changes
+
+
   return (
     <>
       <SEO

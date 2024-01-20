@@ -1,6 +1,14 @@
-import React from 'react'
+import React, { useEffect } from 'react'
+import SEO from '../Seo'
 
 const Contact = () => {
+
+    useEffect(() => {
+        // Scroll to the top when the component mounts
+        window.scrollTo(0, 0);
+    }, []); // Add id as a dependency to scroll to top when the id changes
+    
+
     return (
         <>
             <SEO
@@ -11,9 +19,9 @@ const Contact = () => {
                 keywords="Reduce Post Harvest Loss, Onion All Year Availability, Onion Farm Produce, Encouraging Farmers, Jinjasee Global LTD, Pioneering Food Processing Company, Sustainable Agriculture Lagos Nigeria, Business, Dedicated, Creating, Sustainable Post-Harvest Solutions, High-Quality Food Processing, Consulting Services, Reduce onion Waste, Enhance Value of Agricultural Produce, Fresh onion paste, Natural paste onion plus"
                 siteName="Jinjasee Global Ltd"
             />
-            <section className='min-h-96 bg-sand-green mt-12 pb-24 pt-16 sm:py-24 px-4 sm:px-8 text-primary-green'>
-                <div className="grid sm:grid-cols-2 gap-10 sm:gap-0">
-                    <div className='max-w-md flex flex-col justify-between gap-10'>
+            <section className='bg-sand-green mt-12 pb-24 pt-16 lg:py-24 px-4 sm:px-8 text-primary-green'>
+                <div className="grid lg:grid-cols-2 gap-10 lg:gap-0">
+                    <div className='lg:max-w-md flex flex-col justify-between gap-10'>
                         <div className='text-2xl sm:text-4xl font-medium'>
                             Thank you for your interest in Jinjasee! Please fill out our form here and a team member will be in touch.
                         </div>

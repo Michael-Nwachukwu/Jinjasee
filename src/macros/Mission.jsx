@@ -26,7 +26,7 @@ const Mission = () => {
         <section className='bg-sand-green pt-12 sm:py-12'>
             <h1 className="mx-auto text-center uppercase text-4xl sm:text-8xl text-primary-green font-semibold">our <br /> mission</h1>
             <div className="flex justify-center">
-                <div className="w-full max-w-4xl px-2 py-16 sm:px-0">
+                <div className="w-full sm:max-w-2xl lg:max-w-4xl px-2 py-16 sm:px-0">
                     <Tab.Group>
                         <Tab.List className="flex space-x-1 border-b border-opacity-30 border-primary-green">
                             {Object.keys(categories).map((category) => (
@@ -34,7 +34,7 @@ const Mission = () => {
                                     key={category}
                                     className={({ selected }) =>
                                         classNames(
-                                            'w-full py-2.5 text-xs sm:text-lg font-medium leading-5 text-primary-green',
+                                            'w-full py-2.5 text-xs sm:text-md lg:text-lg font-medium leading-5 text-primary-green',
                                             'focus:outline-none',
                                             selected
                                                 ? 'border-b border-primary-green'

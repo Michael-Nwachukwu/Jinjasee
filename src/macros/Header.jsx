@@ -8,7 +8,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 const navLinks = [
     {title: 'Our product', to: '/our-product'},
     {title: 'About', to: '/about-jinjasee'},
-    {title: 'Updates', to: '/our-blog'},
+    {title: 'Updates', to: '/blog'},
     {title: 'Contact', to: '/contact-jinjasee'},
 ]
 
@@ -16,7 +16,6 @@ const navLinks = [
 const Header = () => {
 
     const location = useLocation();
-    const currentIndex = navLinks.findIndex(link => link.to === location.pathname);
 
     let bg;
     let logo;

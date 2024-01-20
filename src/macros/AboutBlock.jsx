@@ -7,7 +7,7 @@ import Heading from '../micros/Heading'
 const ChevronUpIcon = ({open}) => {
     return (
         <svg 
-            className={`transform ${open ? 'rotate-180' : ''} transition-transform ease-in-out duration-500 h-6 sm:h-8 w-6 sm:w-8`}
+            className={`transform ${open ? 'rotate-180' : ''} transition-transform ease-in-out duration-500 h-5 sm:h-8 w-5 sm:w-8`}
             viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"
         >
             <circle cx="16" cy="16" r="16" transform="rotate(90 16 16)" fill="#004E35"/>
@@ -21,10 +21,10 @@ const AboutBlock = () => {
 
     return (
         <section className='bg-sand-green'>
-            <div className='mb-3 py-12 pl-4 sm:py-14'>
+            <div className='mb-3 py-12 pl-4 lg:py-14'>
                 <Heading heading={"Our\nMission"} />
             </div>
-            <div className="grid sm:grid-cols-2 gap-6 sm:gap-24 mx-5 sm:mx-8 text-primary-green">
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-24 mx-5 sm:mx-8 text-primary-green">
                 <div>
                     <p className="font-semibold text-2xl sm:text-xl">We're on a mission to reduce post harvest loss. Provide all year availability of farm produce and  help farmers max their potential without fear of producing "too much"</p>
                 </div>
@@ -51,7 +51,7 @@ const AboutBlock = () => {
                             <Disclosure>
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className={`flex w-full justify-between items-center py-5 text-left text-lg sm:text-2xl font-medium focus:outline-none ${ open ? 'border-t' : 'border-y'} border-primary-green`}>
+                                        <Disclosure.Button className={`flex w-full justify-between items-center py-5 text-left text-sm sm:text-2xl font-medium focus:outline-none ${ open ? 'border-t' : 'border-y'} border-primary-green`}>
                                             <span>Is it really natural farm fresh onions?</span>
                                             <ChevronUpIcon
                                                 open={open}
@@ -75,7 +75,7 @@ const AboutBlock = () => {
                             <Disclosure as="div" className="mt-2">
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-lg sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
+                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-sm sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
                                             <span>How is the Natural Paste Onion Plus versatile?</span>
                                             <ChevronUpIcon
                                                 open={open}
@@ -99,7 +99,7 @@ const AboutBlock = () => {
                             <Disclosure as="div" className="mt-2">
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-lg sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
+                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-sm sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
                                             <span>Who is this product for?</span>
                                             <ChevronUpIcon
                                                 open={open}
@@ -123,7 +123,7 @@ const AboutBlock = () => {
                             <Disclosure as="div" className="mt-2">
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-lg sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
+                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-sm sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
                                             <span>How does Jinjasee reduce post-harvest loss?</span>
                                             <ChevronUpIcon
                                                 open={open}
@@ -147,7 +147,7 @@ const AboutBlock = () => {
                             <Disclosure as="div" className="mt-2">
                                 {({ open }) => (
                                     <>
-                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-lg sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
+                                        <Disclosure.Button className={`flex w-full justify-between items-center pt-3 pb-5 text-left text-sm sm:text-2xl font-medium focus:outline-none ${ open ? 'border-0' : 'border-b'} border-primary-green`}>
                                             <span>What are we doing differently?</span>
                                             <ChevronUpIcon
                                                 open={open}
