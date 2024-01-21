@@ -37,7 +37,7 @@ const Footer = () => {
                     <div className='space-y-1'>
                         <h3>contact</h3>
                         <ul className='text-muted'>
-                            <li className='hover:underline cursor-pointer'>info@jinijasee.on</li>
+                            <li className='hover:underline cursor-pointer'>jinjasee@gmail.com</li>
                             <li className='hover:underline cursor-pointer'>tel. +234-947-8347-098</li>
                         </ul>
                     </div>
@@ -57,8 +57,8 @@ const Footer = () => {
                         <ul className='text-muted'>
                             <li><a className='hover:underline' href="#">linkedin</a></li>
                             <li><a className='hover:underline' href="#">x</a></li>
-                            <li><a className='hover:underline' href="#">twitter</a></li>
                             <li><a className='hover:underline' href="#">facebook</a></li>
+                            <li><a className='hover:underline' href="#">Whatsapp</a></li>
                         </ul>
                     </div>
                 </div>

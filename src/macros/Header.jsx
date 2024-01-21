@@ -154,10 +154,10 @@ const Header = () => {
                                             })}
                                         </motion.nav>
                                         <div className="mb-4">
-                                            <p className="text-xl font-semibold pb-3">info@jinjasee.com</p>
+                                            <p className="text-xl font-semibold pb-3">jinjasee@gmail.com</p>
                                             <span className='uppercase space-x-3 text-xs'>
                                                 <a href="#">x</a>
-                                                <a href="#">twitter</a>
+                                                <a href="#">Whatsapp</a>
                                                 <a href="#">linkedin</a>
                                                 <a href="#">facebook</a>
                                             </span>

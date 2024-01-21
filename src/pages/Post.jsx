@@ -22,6 +22,7 @@ const Post = () => {
     return (
         <>
             <section className='bg-sand-green mt-12 pb-24 pt-10 sm:py-10 px-4 sm:px-8 text-primary-green '>
+                <button onClick={() => window.history.back()} className="bg-primary-green text-sand-green px-4 py-2 rounded-3xl">Back</button>
                 <div className="sm:max-w-5xl mx-auto">
                     <div className="w-full h-full">
                         <img src={articleDetails?.image} alt={articleDetails?.alt} className="w-full sm:h-[32em] object-cover rounded-3xl" />
@@ -43,13 +44,6 @@ const Post = () => {
                                 <h1 className="text-4xl ">
                                     Contacts
                                 </h1>
-                                <ul>
-                                    <li>Syngenta Crop Protection</li>
-                                    <li>Michelle Ng</li>
-                                    <li>Head, External Communications</li>
-                                    <li>michelle.ng@syngenta.com</li>
-                                </ul>
-
                                 <ul>
                                     <li>Syngenta Crop Protection</li>
                                     <li>Michelle Ng</li>

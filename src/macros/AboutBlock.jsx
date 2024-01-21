@@ -66,7 +66,7 @@ const AboutBlock = () => {
                                             leaveTo="transform -translate-y-full opacity-0"
                                         >
                                             <Disclosure.Panel className="border-b border-primary-green pb-4 pt-3 text-md sm:text-lg">
-                                                Absolutely! Our Natural Paste Onion Plus is crafted from 100% natural and fresh onions, free from artificial additives. We take pride in delivering a product that retains the wholesome goodness of farm-fresh onions, ensuring a natural and authentic flavor.
+                                                Absolutely! Our Natural Paste Onion Plus is crafted from 100% natural and fresh onions. We take pride in delivering a product that retains the wholesome goodness of farm-fresh onions, ensuring a natural and authentic flavor.
                                             </Disclosure.Panel>
                                         </Transition>
                                     </>

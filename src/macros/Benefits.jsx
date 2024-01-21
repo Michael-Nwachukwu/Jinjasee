@@ -3,7 +3,7 @@ import React from 'react'
 const data = [
     {
         problem: "Wasting Time on Onion Preparation",
-        solution: "Our onion paste eliminates the time-consuming process of peeling and chopping onions."
+        solution: "Our paste onion eliminates the time-consuming process of peeling and chopping onions."
     },
     {
         problem: "Affordability Barrier",
@@ -11,15 +11,15 @@ const data = [
     },
     {
         problem: "Eye Irritation during Onion Preparation",
-        solution: "A tear-free onion paste."
+        solution: "A tear-free paste onion."
     },
     {
         problem: "Short Shelf Life of Onions",
-        solution: "Ensuring a longer shelf life for our onion paste without compromising on freshness."
+        solution: "Ensuring a longer shelf life for our paste onion without compromising on freshness."
     },
     {
         problem: "Limited Culinary Creativity with Onions",
-        solution: "Versatile onion paste that enhances a wide range of recipes, encourages you to do more."
+        solution: "Versatile paste onion that enhances a wide range of recipes, encourages you to do more."
     },
     {
         problem: "Missing Out on Onion's Natural Health Benefits",

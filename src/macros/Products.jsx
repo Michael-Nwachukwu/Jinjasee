@@ -14,7 +14,7 @@ const Products = () => {
                 </div>
                 <div className="flex flex-col-reverse pl-5 sm:pl-8 lg:pl-5 lg:flex-col justify-between items-start py-3 sm:py-10 lg:py-3 gap-5">
                     <PrimBtn primaryBtnText={'order now'} />
-                    <p className='text-lg text-light-green font-light'>Our product, the Natural Paste Onion Plus, is an innovative product crafted from 100% natural and fresh onions, free from artificial additives. It offers a unique and versatile flavor profile, catering to health-conscious consumers and culinary enthusiasts. The product is positioned as a premium and convenient solution, targeting households, restaurants, and food manufacturers.</p>
+                    <p className='text-lg text-light-green font-light'>Our product, the Natural Paste Onion Plus, is an innovative product crafted from 100% natural and fresh onions. It offers a unique and versatile flavor profile, catering to health-conscious consumers and culinary enthusiasts. The product is positioned as a premium and convenient solution, targeting households, restaurants, and food manufacturers.</p>
                     <h1 className="text-light-green font-semibold text-5xl lg:text-7xl">Natural Paste Onion +</h1>
                 </div>
             </div>
