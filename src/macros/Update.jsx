@@ -18,7 +18,7 @@ const Update = () => {
                         <Link to={`/blog/post/${article.id}`} key={article.id}>
                             <div className='text-primary-green space-y-4'>
                                 <div className='zoom-effect'>
-                                    <img src={article.image} className='w-full h-[35em] object-cover' alt={article.alt} />
+                                    <img src={article.image} className='w-full sm:h-[35em] object-cover' alt={article.alt} />
                                 </div>
                                 <div className="inline-flex items-center divide-x divide-primary-green text-xs lg:text-sm font-medium">
                                     <span className='pr-3 sm:pr-5 '>{article.date}</span>
