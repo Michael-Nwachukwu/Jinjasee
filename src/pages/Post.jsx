@@ -1,6 +1,5 @@
 import React, {useEffect} from 'react'
 import { useParams } from 'react-router-dom'
-import blogOne from '../assets/blog-one.png'
 import Blog from '../content/Blog'
 
 const Post = () => {
@@ -21,8 +20,8 @@ const Post = () => {
 
     return (
         <>
-            <section className='bg-sand-green mt-12 pb-24 pt-10 sm:py-10 px-4 sm:px-8 text-primary-green '>
-                <button onClick={() => window.history.back()} className="bg-primary-green text-sand-green px-4 py-2 rounded-3xl">Back</button>
+            <section className='bg-sand-green mt-12 pb-24 pt-8 sm:py-10 px-4 sm:px-8 text-primary-green '>
+                <button onClick={() => history.back()} className="bg-primary-green text-sand-green px-3 sm:px-4 py-1 sm:py-2 rounded-3xl mb-4 lg:mb-0">Back</button>
                 <div className="sm:max-w-5xl mx-auto">
                     <div className="w-full h-full">
                         <img src={articleDetails?.image} alt={articleDetails?.alt} className="w-full sm:h-[32em] object-cover rounded-3xl" />
