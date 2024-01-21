@@ -44,10 +44,10 @@ const Post = () => {
                                     Contacts
                                 </h1>
                                 <ul>
-                                    <li>Syngenta Crop Protection</li>
-                                    <li>Michelle Ng</li>
-                                    <li>Head, External Communications</li>
-                                    <li>michelle.ng@syngenta.com</li>
+                                    <li>Yaba drive</li>
+                                    <li>Mainland Lagos, Nigeria</li>
+                                    <li className='hover:underline cursor-pointer'>jinjasee@gmail.com</li>
+                                    <li className='hover:underline cursor-pointer'>tel. +234-947-8347-098</li>
                                 </ul>
                             </div>
                         </div>
